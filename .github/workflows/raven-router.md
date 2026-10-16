@@ -10,6 +10,7 @@ if: >-
   github.repository == 'ricardocovo/rookery' &&
   contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
 permissions:
+  copilot-requests: write
   contents: read
   issues: read
 engine: copilot
